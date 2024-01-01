@@ -3,11 +3,11 @@
   "version": "1.0.0",
   "description": "Educator JS Codespace Template",
   "source": "src/index.html",
-  "homepage": "http://J-JLucas.github.io/CodeSpacesDemo",
+  "homepage": "http://J-JLucas.github.io/PlaySCM",
   "scripts": {
     "start": "parcel",
     "build": "parcel build",
-    "build-gh": "parcel build --public-url 'https://J-JLucas.github.io/CodeSpacesDemo'",
+    "build-gh": "parcel build --public-url 'https://J-JLucas.github.io/PlaySCM'",
     "predeploy": "npm run build-gh",
     "deploy": "gh-pages -d dist"
   },
