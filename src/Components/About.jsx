@@ -11,6 +11,7 @@ const skillsList = [
   "3 Action packed Levels",
   "4 Unique Weapons",
   "4 Classic Zerg Enemies",
+  "Headshot System",
   "Iconic Starcraft SFX and Music",
   "Built with Unreal Engine 5",
 ];
