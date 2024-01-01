@@ -142,6 +142,7 @@ img.socialIcon {
 @media screen and (max-width: 480px) {
   .about-section {
     width: 90%;
+    background-color: #000;
   }
 
   .skills-list {

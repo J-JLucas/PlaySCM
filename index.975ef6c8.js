@@ -27182,18 +27182,19 @@ const skillsList = [
  * about you on a professional level.
  */ const detailOrQuote = "SCM was built in Unreal5 over the summer of 2023. Special thanks to my friend Hayden for his Blender expertise, without him this project would have never gotten started, and my brother Nick for adding that extra kick to the weapon SFX. Also thank you to my playtesters for taking the time to provide valueable feedback. The project is currently on hiatus as I am busy with school, but I hope to continue working on it in the future.";
 const About = ()=>{
+    const isMobileDevice = window.innerWidth <= 480; // Adjust this value as needed
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
         className: "padding",
         id: "about",
         children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+            !isMobileDevice && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
                 className: "background",
                 src: (0, _blankSkyPngDefault.default),
                 alt: imageAltText
             }, void 0, false, {
                 fileName: "src/Components/About.jsx",
-                lineNumber: 29,
-                columnNumber: 7
+                lineNumber: 31,
+                columnNumber: 27
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "about-section",
@@ -27202,7 +27203,7 @@ const About = ()=>{
                         children: "STARCRAFT: MARINE"
                     }, void 0, false, {
                         fileName: "src/Components/About.jsx",
-                        lineNumber: 31,
+                        lineNumber: 33,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -27210,12 +27211,12 @@ const About = ()=>{
                         children: description
                     }, void 0, false, {
                         fileName: "src/Components/About.jsx",
-                        lineNumber: 32,
+                        lineNumber: 34,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("hr", {}, void 0, false, {
                         fileName: "src/Components/About.jsx",
-                        lineNumber: 33,
+                        lineNumber: 35,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
@@ -27224,17 +27225,17 @@ const About = ()=>{
                                 children: skill
                             }, skill, false, {
                                 fileName: "src/Components/About.jsx",
-                                lineNumber: 36,
+                                lineNumber: 38,
                                 columnNumber: 13
                             }, undefined))
                     }, void 0, false, {
                         fileName: "src/Components/About.jsx",
-                        lineNumber: 34,
+                        lineNumber: 36,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("hr", {}, void 0, false, {
                         fileName: "src/Components/About.jsx",
-                        lineNumber: 39,
+                        lineNumber: 41,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -27244,19 +27245,19 @@ const About = ()=>{
                         children: detailOrQuote
                     }, void 0, false, {
                         fileName: "src/Components/About.jsx",
-                        lineNumber: 40,
+                        lineNumber: 42,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/Components/About.jsx",
-                lineNumber: 30,
+                lineNumber: 32,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/Components/About.jsx",
-        lineNumber: 28,
+        lineNumber: 30,
         columnNumber: 5
     }, undefined);
 };
@@ -28753,7 +28754,7 @@ const images = [
 ];
 const imageAltText = "SCM Titlescreen";
 const project = {
-    title: "CLICK TO DOWNLOAD STARCRAFT MARINE",
+    title: "CLICK TO DOWNLOAD STARCRAFT: MARINE",
     description: "",
     url: "https://github.com/J-JLucas/SCM/releases/tag/FirstRelease"
 };
