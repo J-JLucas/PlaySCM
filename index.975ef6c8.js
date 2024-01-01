@@ -27274,7 +27274,7 @@ $RefreshReg$(_c, "About");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../images/blankSky.png":"4gEtr","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./About.css":"ibBg0"}],"4gEtr":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../images/blankSky.png":"4gEtr","./About.css":"ibBg0","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"4gEtr":[function(require,module,exports) {
 module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "blankSky.7bfe3b7b.png" + "?" + Date.now();
 
 },{"./helpers/bundle-url":"lgJ39"}],"lgJ39":[function(require,module,exports) {
@@ -27311,7 +27311,7 @@ exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
 exports.getOrigin = getOrigin;
 
-},{}],"gkKU3":[function(require,module,exports) {
+},{}],"ibBg0":[function() {},{}],"gkKU3":[function(require,module,exports) {
 exports.interopDefault = function(a) {
     return a && a.__esModule ? a : {
         default: a
@@ -27461,7 +27461,7 @@ function registerExportsForReactRefresh(module1) {
     }
 }
 
-},{"react-refresh/runtime":"786KC"}],"ibBg0":[function() {},{}],"7GWgX":[function(require,module,exports) {
+},{"react-refresh/runtime":"786KC"}],"7GWgX":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$8b43 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -28652,7 +28652,7 @@ const Home = ()=>{
                 lineNumber: 20,
                 columnNumber: 27
             }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            !isMobileDevice && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 style: {
                     position: "absolute",
                     bottom: "3rem",
@@ -28667,13 +28667,13 @@ const Home = ()=>{
                     alt: imageAltText
                 }, void 0, false, {
                     fileName: "src/Components/Home.jsx",
-                    lineNumber: 22,
-                    columnNumber: 9
+                    lineNumber: 23,
+                    columnNumber: 11
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/Components/Home.jsx",
-                lineNumber: 21,
-                columnNumber: 7
+                lineNumber: 22,
+                columnNumber: 9
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 style: {
@@ -28691,12 +28691,12 @@ const Home = ()=>{
                     allowFullScreen: true
                 }, void 0, false, {
                     fileName: "src/Components/Home.jsx",
-                    lineNumber: 25,
+                    lineNumber: 27,
                     columnNumber: 9
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/Components/Home.jsx",
-                lineNumber: 24,
+                lineNumber: 26,
                 columnNumber: 7
             }, undefined)
         ]
