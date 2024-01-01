@@ -25,8 +25,8 @@ import "./styles.css";
  */
 const siteProps = {
   name: "JoSh Lucas",
-  title: "Computer Science Student",
-  email: "jlucas205@proton.me",
+  title: "",
+  email: "zerkopree@gmail.com",
   gitHub: "J-JLucas",
   instagram: "",
   linkedIn: "",

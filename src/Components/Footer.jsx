@@ -34,8 +34,8 @@ const Footer = (props) => {
     instagram,
     linkedIn,
     medium,
-    name,
-    primaryColor,
+    //name,
+    //primaryColor,
     twitter,
     youTube,
   } = props;
@@ -49,8 +49,9 @@ const Footer = (props) => {
         alignItems: "center",
         gap: "2.5rem",
         padding: "5rem 0 3rem",
-        backgroundColor: primaryColor,
-        width: "100vw"
+        backgroundColor: "rgba(0,0,0,1)",
+        color: "rgb(197, 217, 255)",
+        width: "100vw",
       }}
     >
       <div
@@ -113,8 +114,12 @@ const Footer = (props) => {
           </a>
         )}
       </div>
-      <p className="small" style={{ marginTop: 0, color: "white" }}>
-        Created by {name}
+      <p className="small" style={{ marginTop: 0, color: "rgb(197, 217, 255)", fontSize: "12px", textAlign: "center" }}>
+        DISCLAIMER:<br />
+        This is a fan-made game based on the Starcraft franchise created by Blizzard Entertainment.<br />
+        I do not own Starcraft or any of its characters, settings, assets or trademarks.<br />
+        This game is not endorsed by Blizzard Entertainment/Activision/Microsoft and is intended for entertainment purposes only.<br />
+        If you like the game, hire me to make it for you!
       </p>
     </div>
   );
@@ -132,7 +137,7 @@ Footer.propTypes = {
   linkedIn: PropTypes.string,
   medium: PropTypes.string,
   name: PropTypes.string.isRequired,
-  primaryColor: PropTypes.string,
+  //primaryColor: PropTypes.string,
   twitter: PropTypes.string,
   youTube: PropTypes.string,
 

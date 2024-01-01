@@ -1,74 +1,73 @@
-/**
- * Portfolio component
- *
- * Highlights some of  your creations. These can be designs, websites,
- * open source contributions, articles you've written and more.
- *
- * This is a great area for you to to continually add to and refine
- * as you continue to learn and create.
- */
+//import React from "react";
+import React, { useState } from "react";
 
-import React from "react";
+import image1 from "../images/SCMTitle.jpg";
+import image2 from "../images/FirstShot.jpg";
+import image3 from "../images/Installation2.jpg";
+import image4 from "../images/Lab.jpg";
+import image5 from "../images/Nightvision.jpg";
 
-/**
- * Desk image
- *
- * Below is a sample desk image. Feel free to update this to an image of your choice,
- * updating below imageAltText to string that represents what you see in that image.
- *
- * Need an image? Check out https://unsplash.com to download a photo you
- * freely use on your site.
- */
-import image from "../images/beach3.jpg";
+const images = [image1, image2, image3, image4, image5];
 
-const imageAltText = "yet another beach";
+const imageAltText = "SCM Titlescreen";
 
-/**
- * Project list
- *
- * An array of objects that will be used to display for your project
- * links section. Below is a sample, update to reflect links you'd like to highlight.
- */
-const projectList = [
-  {
-    title: "My Starcraft Fan Game",
-    description:
-      "When I was a little kid, I never got over Starcraft:Ghost getting cancelled.",
-    url: "https://github.com/J-JLucas/SCM",
-  },
-  {
-    title: "Pthreads Synchronization Exercise",
-    description:
-      "One of my more interesting assignments from my Operating Systems class.",
-    url: "https://github.com/J-JLucas/PThreads-Synchronization-Exercise",
-  },
-];
+const project = {
+  title: "CLICK TO DOWNLOAD STARCRAFT MARINE",
+  description: "",
+  url: "https://github.com/J-JLucas/SCM",
+};
 
-const Portfolio = () => {
+const Download = () => {
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const nextImage = () => {
+    setCurrentImageIndex((currentImageIndex + 1) % images.length);
+  };
+
+  const prevImage = () => {
+    setCurrentImageIndex((currentImageIndex - 1 + images.length) % images.length);
+  };
+
+  const openModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
+
   return (
-    <section className="padding" id="portfolio">
-      <h2 style={{ textAlign: "center" }}>Portfolio</h2>
-      <div style={{ display: "flex", flexDirection: "row", paddingTop: "3rem" }}>
-        <div style={{ maxWidth: "40%", alignSelf: "center" }}>
+    <section className="padding" id="portfolio" style={{ backgroundColor: "black", color: "rgb(197, 217, 255)" }}>
+      <h2 style={{ textAlign: "center" }}>Download</h2>
+      <div style={{ display: "flex", justifyContent: "center", paddingTop: "3rem" }}>
+        <div style={{ maxWidth: "40%", alignSelf: "center", margin: "auto" }}>
+          <button onClick={prevImage}>Previous</button>
           <img
-            src={image}
-            style={{ height: "90%", width: "100%", objectFit: "cover" }}
+            src={images[currentImageIndex]}
+            style={{ height: "90%", width: "100%", objectFit: "cover", cursor: 'pointer' }}
             alt={imageAltText}
+            onClick={openModal}
           />
-        </div>
-        <div className="container">
-          {projectList.map((project) => (
-            <div className="box" key={project.title}>
-              <a href={project.url} target="_blank" rel="noopener noreferrer">
-                <h3 style={{ flexBasis: "40px" }}>{project.title}</h3>
-              </a>
-              <p className="small">{project.description}</p>
+          <button onClick={nextImage}>Next</button>
+
+          {isModalOpen && (
+            <div onClick={closeModal} style={{ position: 'fixed', top: 0, left: 0, right: 0, bottom: 0, backgroundColor: 'rgba(0, 0, 0, 0.5)', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+              <img src={images[currentImageIndex]} alt="" onClick={closeModal} />
             </div>
-          ))}
+          )}
+        </div>
+        <div className="container" style={{ display: 'inline-block' }}>
+          <div className="box">
+            <a href={project.url} target="_blank" rel="noopener noreferrer" style={{ color: "rgb(197, 217, 255)" }}>
+              <h3 style={{ flexBasis: "40px" }}>{project.title}</h3>
+            </a>
+            <p className="small">{project.description}</p>
+          </div>
         </div>
       </div>
     </section>
   );
 };
 
-export default Portfolio;
+export default Download;

@@ -1,42 +1,19 @@
-/**
- * About component
- *
- * Space for you to describe more about yourself.
- */
+
 
 import React from "react";
+import image from "../images/blankSky.png";
 
-/**
- * About background image
- *
- * Below is a sample image. Upload the image of your choice into the "images"
- * directory and import here for use. Then, set imageAltText to string that 
- * represents what you see in that image.
- *
- * Need an image? Check out https://unsplash.com to download a image you
- * freely use on your site.
- */
-import image from "../images/beach2.jpg";
+const imageAltText = "Starcraft Skybox";
 
-const imageAltText = "Another picture of a beach";
-
-/**
- * Sort description that expands on your title on the Home component.
- */
 const description =
-  "I'm a Computer Science Software Specialization student studying at the University of Alberta. I like games and low level programming. C and C++ enjoyer";
+  "SCM is a Starcraft retro style FPS fan project inspired by DooM/Project Brutality, Quake and my love for the Starcraft Universe featuring:"
 
-/**
- * List of some of skills or technologies you work on, are learning,
- * passionate about, or enjoy,
- */
 const skillsList = [
-  "Unreal Engine",
-  "Pthreads Synchronization",
-  "Socket Programming",
-  "RISC-V Assembly",
-  "SQL",
-  "Graphic design",
+  "3 Action packed Levels",
+  "4 Unique Weapons",
+  "4 Classic Zerg Enemies",
+  "Iconic Starcraft SFX and Music",
+  "Built with Unreal Engine 5",
 ];
 
 /**
@@ -45,7 +22,7 @@ const skillsList = [
  * about you on a professional level.
  */
 const detailOrQuote =
-  "I love the design aspect of building a new system. I love optimization and making things as efficient as possible. I love refactoring and learning new things and I love collaborating with other passionate people.";
+  "SCM was built in Unreal5 over the summer of 2023. Special thanks to my friend Hayden for his Blender expertise, without him this project would have never gotten started. Also thank you to my playtesters for taking the time to provide valueable feedback. The project is currently on hiatus as I am busy with school, but I hope to continue working on it in the future.";
 
 const About = () => {
   return (
@@ -53,14 +30,15 @@ const About = () => {
       <img className="background" src={image} alt={imageAltText} />
       <div
         style={{
-          backgroundColor: "white",
+          backgroundColor: "rgba(0,0,0,0.75)",
+          color: "rgb(197, 217, 255)",
           width: "50%",
           padding: "4rem",
           margin: "3rem auto",
           textAlign: "center",
         }}
       >
-        <h2>About Myself</h2>
+        <h2>STARCRAFT: MARINE</h2>
         <p className="large">{description}</p>
         <hr />
         <ul
