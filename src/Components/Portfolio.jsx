@@ -39,7 +39,7 @@ const Download = () => {
 
   return (
     <section className="padding" id="portfolio" style={{ backgroundColor: "black", color: "rgb(197, 217, 255)" }}>
-      <h2 style={{ textAlign: "center" }}>Download</h2>
+      <h2 style={{ textAlign: "center" }}>DOWNLOAD</h2>
       
       <div style={{ display: "flex", justifyContent: "center", paddingTop: "3rem" }}>
         <div style={{ maxWidth: "40%", alignSelf: "center", margin: "auto" }}>
