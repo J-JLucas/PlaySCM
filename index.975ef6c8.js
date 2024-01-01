@@ -27186,6 +27186,9 @@ const About = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
         className: "padding",
         id: "about",
+        style: {
+            backgroundColor: isMobileDevice ? "black" : "transparent"
+        },
         children: [
             !isMobileDevice && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
                 className: "background",
@@ -28636,6 +28639,9 @@ const Home = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
         id: "home",
         className: "min-height",
+        style: {
+            backgroundColor: isMobileDevice ? "black" : "transparent"
+        },
         children: [
             !isMobileDevice && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
                 className: "background",
