@@ -13,20 +13,20 @@ import image from "../images/blankSky.png";
 const imageAltText = "Starcraft Skybox";
 
 const Home = () => {
+  const isMobileDevice = window.innerWidth <= 480; // Adjust this value as needed
+
   return (
     <section id="home" className="min-height">
-      <img className="background" src={image} alt="" />
-
+      {!isMobileDevice && <img className="background" src={image} alt="" />}
       <div style={{ position: "absolute", bottom: "3rem", left: "50%" }}>
         <img src={arrowSvg} style={{ height: "3rem", width: "3rem" }} alt={imageAltText} />
       </div>
       <div style={{ display: "flex", justifyContent: "center", alignItems: "center", height: "100vh" }}>
         <iframe 
           title="YouTube video player"
-          width="1280" 
-          height="720" 
+          width={isMobileDevice ? "320" : "1280"} 
+          height={isMobileDevice ? "180" : "720"} 
           src="https://www.youtube.com/embed/Dflu0cRGD5I?si=Wn1fJTyJm08dqbKN" 
-          //frameborder="0" 
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
           allowFullScreen>
         </iframe>
