@@ -28632,18 +28632,19 @@ var _blankSkyPng = require("../images/blankSky.png");
 var _blankSkyPngDefault = parcelHelpers.interopDefault(_blankSkyPng);
 const imageAltText = "Starcraft Skybox";
 const Home = ()=>{
+    const isMobileDevice = window.innerWidth <= 480; // Adjust this value as needed
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
         id: "home",
         className: "min-height",
         children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+            !isMobileDevice && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
                 className: "background",
                 src: (0, _blankSkyPngDefault.default),
                 alt: ""
             }, void 0, false, {
                 fileName: "src/Components/Home.jsx",
-                lineNumber: 18,
-                columnNumber: 7
+                lineNumber: 20,
+                columnNumber: 27
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 style: {
@@ -28660,12 +28661,12 @@ const Home = ()=>{
                     alt: imageAltText
                 }, void 0, false, {
                     fileName: "src/Components/Home.jsx",
-                    lineNumber: 21,
+                    lineNumber: 22,
                     columnNumber: 9
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/Components/Home.jsx",
-                lineNumber: 20,
+                lineNumber: 21,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -28677,26 +28678,25 @@ const Home = ()=>{
                 },
                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("iframe", {
                     title: "YouTube video player",
-                    width: "1280",
-                    height: "720",
+                    width: isMobileDevice ? "320" : "1280",
+                    height: isMobileDevice ? "180" : "720",
                     src: "https://www.youtube.com/embed/Dflu0cRGD5I?si=Wn1fJTyJm08dqbKN",
-                    //frameborder="0" 
                     allow: "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share",
                     allowFullScreen: true
                 }, void 0, false, {
                     fileName: "src/Components/Home.jsx",
-                    lineNumber: 24,
+                    lineNumber: 25,
                     columnNumber: 9
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/Components/Home.jsx",
-                lineNumber: 23,
+                lineNumber: 24,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/Components/Home.jsx",
-        lineNumber: 17,
+        lineNumber: 19,
         columnNumber: 5
     }, undefined);
 };
