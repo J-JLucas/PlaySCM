@@ -1,7 +1,7 @@
 {
   "name": "educator-js-codespace-template",
   "version": "1.0.0",
-  "description": "Educator JS Codespace Template",
+  "description": "Starcraft Marine",
   "source": "src/index.html",
   "homepage": "http://J-JLucas.github.io/PlaySCM",
   "scripts": {
