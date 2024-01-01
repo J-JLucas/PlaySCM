@@ -16,6 +16,9 @@
   }
   
   @media screen and (max-width: 480px) {
+    .about-section {
+      width: 90%; /* Adjust this value as needed */
+    }
     .skills-list {
       columns: 1;
     }

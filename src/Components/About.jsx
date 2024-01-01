@@ -23,24 +23,24 @@ const skillsList = [
 const detailOrQuote =
   "SCM was built in Unreal5 over the summer of 2023. Special thanks to my friend Hayden for his Blender expertise, without him this project would have never gotten started, and my brother Nick for adding that extra kick to the weapon SFX. Also thank you to my playtesters for taking the time to provide valueable feedback. The project is currently on hiatus as I am busy with school, but I hope to continue working on it in the future.";
 
-  const About = () => {
-    return (
-      <section className="padding" id="about">
-        <img className="background" src={image} alt={imageAltText} />
-        <div className="about-section">
-          <h2>STARCRAFT: MARINE</h2>
-          <p className="large">{description}</p>
-          <hr />
-          <ul className="skills-list">
-            {skillsList.map((skill) => (
-              <li key={skill}>{skill}</li>
-            ))}
-          </ul>
-          <hr />
-          <p style={{ padding: "1rem 3rem 0" }}>{detailOrQuote}</p>
-        </div>
-      </section>
-    );
-  };
+const About = () => {
+  return (
+    <section className="padding" id="about">
+      <img className="background" src={image} alt={imageAltText} />
+      <div className="about-section">
+        <h2>STARCRAFT: MARINE</h2>
+        <p className="large">{description}</p>
+        <hr />
+        <ul className="skills-list">
+          {skillsList.map((skill) => (
+            <li key={skill}>{skill}</li>
+          ))}
+        </ul>
+        <hr />
+        <p style={{ padding: "1rem 3rem 0" }}>{detailOrQuote}</p>
+      </div>
+    </section>
+  );
+};
   
-  export default About;
+export default About;
