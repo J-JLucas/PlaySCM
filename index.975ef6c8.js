@@ -27166,6 +27166,7 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _blankSkyPng = require("../images/blankSky.png");
 var _blankSkyPngDefault = parcelHelpers.interopDefault(_blankSkyPng);
+var _aboutCss = require("./About.css");
 const imageAltText = "Starcraft Skybox";
 const description = "SCM is a Starcraft retro style FPS fan project inspired by DooM/Project Brutality, Quake and my love for the Starcraft Universe featuring:";
 const skillsList = [
@@ -27191,63 +27192,50 @@ const About = ()=>{
                 alt: imageAltText
             }, void 0, false, {
                 fileName: "src/Components/About.jsx",
-                lineNumber: 30,
-                columnNumber: 7
+                lineNumber: 29,
+                columnNumber: 9
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                style: {
-                    backgroundColor: "rgba(0,0,0,0.75)",
-                    color: "rgb(197, 217, 255)",
-                    width: "50%",
-                    padding: "4rem",
-                    margin: "3rem auto",
-                    textAlign: "center"
-                },
+                className: "about-section",
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
                         children: "STARCRAFT: MARINE"
                     }, void 0, false, {
                         fileName: "src/Components/About.jsx",
-                        lineNumber: 41,
-                        columnNumber: 9
+                        lineNumber: 31,
+                        columnNumber: 11
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                         className: "large",
                         children: description
                     }, void 0, false, {
                         fileName: "src/Components/About.jsx",
-                        lineNumber: 42,
-                        columnNumber: 9
+                        lineNumber: 32,
+                        columnNumber: 11
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("hr", {}, void 0, false, {
                         fileName: "src/Components/About.jsx",
-                        lineNumber: 43,
-                        columnNumber: 9
+                        lineNumber: 33,
+                        columnNumber: 11
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
-                        style: {
-                            textAlign: "left",
-                            columns: 2,
-                            fontSize: "1.25rem",
-                            margin: "2rem 3rem",
-                            gap: "3rem"
-                        },
+                        className: "skills-list",
                         children: skillsList.map((skill)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                                 children: skill
                             }, skill, false, {
                                 fileName: "src/Components/About.jsx",
-                                lineNumber: 54,
-                                columnNumber: 13
+                                lineNumber: 36,
+                                columnNumber: 15
                             }, undefined))
                     }, void 0, false, {
                         fileName: "src/Components/About.jsx",
-                        lineNumber: 44,
-                        columnNumber: 9
+                        lineNumber: 34,
+                        columnNumber: 11
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("hr", {}, void 0, false, {
                         fileName: "src/Components/About.jsx",
-                        lineNumber: 57,
-                        columnNumber: 9
+                        lineNumber: 39,
+                        columnNumber: 11
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                         style: {
@@ -27256,20 +27244,20 @@ const About = ()=>{
                         children: detailOrQuote
                     }, void 0, false, {
                         fileName: "src/Components/About.jsx",
-                        lineNumber: 58,
-                        columnNumber: 9
+                        lineNumber: 40,
+                        columnNumber: 11
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/Components/About.jsx",
-                lineNumber: 31,
-                columnNumber: 7
+                lineNumber: 30,
+                columnNumber: 9
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/Components/About.jsx",
-        lineNumber: 29,
-        columnNumber: 5
+        lineNumber: 28,
+        columnNumber: 7
     }, undefined);
 };
 _c = About;
@@ -27282,7 +27270,7 @@ $RefreshReg$(_c, "About");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../images/blankSky.png":"4gEtr","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"4gEtr":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../images/blankSky.png":"4gEtr","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./About.css":"ibBg0"}],"4gEtr":[function(require,module,exports) {
 module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "blankSky.7bfe3b7b.png" + "?" + Date.now();
 
 },{"./helpers/bundle-url":"lgJ39"}],"lgJ39":[function(require,module,exports) {
@@ -27469,7 +27457,7 @@ function registerExportsForReactRefresh(module1) {
     }
 }
 
-},{"react-refresh/runtime":"786KC"}],"7GWgX":[function(require,module,exports) {
+},{"react-refresh/runtime":"786KC"}],"ibBg0":[function() {},{}],"7GWgX":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$8b43 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;

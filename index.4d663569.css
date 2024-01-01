@@ -122,4 +122,27 @@ img.socialIcon {
   width: 30px;
 }
 
+.about-section {
+  color: #c5d9ff;
+  width: 50%;
+  text-align: center;
+  background-color: #000000bf;
+  margin: 3rem auto;
+  padding: 4rem;
+}
+
+.skills-list {
+  text-align: left;
+  columns: 2;
+  gap: 3rem;
+  margin: 2rem 3rem;
+  font-size: 1.25rem;
+}
+
+@media screen and (max-width: 480px) {
+  .skills-list {
+    columns: 1;
+  }
+}
+
 /*# sourceMappingURL=index.4d663569.css.map */
