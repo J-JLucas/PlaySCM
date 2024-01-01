@@ -40,6 +40,7 @@ const Download = () => {
   return (
     <section className="padding" id="portfolio" style={{ backgroundColor: "black", color: "rgb(197, 217, 255)" }}>
       <h2 style={{ textAlign: "center" }}>Download</h2>
+      
       <div style={{ display: "flex", justifyContent: "center", paddingTop: "3rem" }}>
         <div style={{ maxWidth: "40%", alignSelf: "center", margin: "auto" }}>
           <button onClick={prevImage}>Previous</button>
@@ -57,6 +58,8 @@ const Download = () => {
             </div>
           )}
         </div>
+
+
         <div className="container" style={{ display: 'inline-block' }}>
           <div className="box">
             <a href={project.url} target="_blank" rel="noopener noreferrer" style={{ color: "rgb(197, 217, 255)" }}>
