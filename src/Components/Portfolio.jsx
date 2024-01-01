@@ -12,7 +12,7 @@ const images = [image1, image2, image3, image4, image5];
 const imageAltText = "SCM Titlescreen";
 
 const project = {
-  title: "CLICK TO DOWNLOAD STARCRAFT MARINE",
+  title: "CLICK TO DOWNLOAD STARCRAFT: MARINE",
   description: "",
   url: "https://github.com/J-JLucas/SCM/releases/tag/FirstRelease",
 };
