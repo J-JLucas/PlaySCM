@@ -19,6 +19,7 @@
     .about-section {
       background-color: black;
       width: 90%; /* Adjust this value as needed */
+      box-sizing: border-box;
     }
     .skills-list {
       columns: 1;

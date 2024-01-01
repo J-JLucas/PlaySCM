@@ -27,7 +27,7 @@ const About = () => {
   const isMobileDevice = window.innerWidth <= 480; // Adjust this value as needed
 
   return (
-    <section className="padding" id="about">
+    <section className="padding" id="about" style={{ backgroundColor: isMobileDevice ? 'black' : 'transparent' }}>
       {!isMobileDevice && <img className="background" src={image} alt={imageAltText} />}
       <div className="about-section">
         <h2>STARCRAFT: MARINE</h2>
