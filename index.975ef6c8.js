@@ -27193,7 +27193,7 @@ const About = ()=>{
             }, void 0, false, {
                 fileName: "src/Components/About.jsx",
                 lineNumber: 29,
-                columnNumber: 9
+                columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "about-section",
@@ -27203,7 +27203,7 @@ const About = ()=>{
                     }, void 0, false, {
                         fileName: "src/Components/About.jsx",
                         lineNumber: 31,
-                        columnNumber: 11
+                        columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                         className: "large",
@@ -27211,12 +27211,12 @@ const About = ()=>{
                     }, void 0, false, {
                         fileName: "src/Components/About.jsx",
                         lineNumber: 32,
-                        columnNumber: 11
+                        columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("hr", {}, void 0, false, {
                         fileName: "src/Components/About.jsx",
                         lineNumber: 33,
-                        columnNumber: 11
+                        columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
                         className: "skills-list",
@@ -27225,17 +27225,17 @@ const About = ()=>{
                             }, skill, false, {
                                 fileName: "src/Components/About.jsx",
                                 lineNumber: 36,
-                                columnNumber: 15
+                                columnNumber: 13
                             }, undefined))
                     }, void 0, false, {
                         fileName: "src/Components/About.jsx",
                         lineNumber: 34,
-                        columnNumber: 11
+                        columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("hr", {}, void 0, false, {
                         fileName: "src/Components/About.jsx",
                         lineNumber: 39,
-                        columnNumber: 11
+                        columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                         style: {
@@ -27245,19 +27245,19 @@ const About = ()=>{
                     }, void 0, false, {
                         fileName: "src/Components/About.jsx",
                         lineNumber: 40,
-                        columnNumber: 11
+                        columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/Components/About.jsx",
                 lineNumber: 30,
-                columnNumber: 9
+                columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/Components/About.jsx",
         lineNumber: 28,
-        columnNumber: 7
+        columnNumber: 5
     }, undefined);
 };
 _c = About;
@@ -28527,14 +28527,15 @@ var _jsxDevRuntime = require("react/jsx-dev-runtime");
  */ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 const Header = ()=>{
+    const isMobile = window.innerWidth <= 600;
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         style: {
             position: "fixed",
             display: "flex",
             justifyContent: "center",
-            gap: "2rem",
+            gap: isMobile ? "1rem" : "2rem",
             background: "rgba(0,0,0,0.75)",
-            padding: "1rem",
+            padding: isMobile ? "0.5rem" : "1rem",
             top: 0,
             width: "100%",
             zIndex: 10
@@ -28543,51 +28544,55 @@ const Header = ()=>{
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
                 href: "#home",
                 style: {
-                    color: "rgb(197, 217, 255)"
+                    color: "rgb(197, 217, 255)",
+                    fontSize: isMobile ? "0.8rem" : "1rem"
                 },
                 children: "Home"
-            }, void 0, false, {
-                fileName: "src/Components/Header.jsx",
-                lineNumber: 24,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                href: "#about",
-                style: {
-                    color: "rgb(197, 217, 255)"
-                },
-                children: "About"
-            }, void 0, false, {
-                fileName: "src/Components/Header.jsx",
-                lineNumber: 25,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                href: "#portfolio",
-                style: {
-                    color: "rgb(197, 217, 255)"
-                },
-                children: "Download"
             }, void 0, false, {
                 fileName: "src/Components/Header.jsx",
                 lineNumber: 26,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                href: "#about",
+                style: {
+                    color: "rgb(197, 217, 255)",
+                    fontSize: isMobile ? "0.8rem" : "1rem"
+                },
+                children: "About"
+            }, void 0, false, {
+                fileName: "src/Components/Header.jsx",
+                lineNumber: 27,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                href: "#portfolio",
+                style: {
+                    color: "rgb(197, 217, 255)",
+                    fontSize: isMobile ? "0.8rem" : "1rem"
+                },
+                children: "Download"
+            }, void 0, false, {
+                fileName: "src/Components/Header.jsx",
+                lineNumber: 28,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
                 href: "#footer",
                 style: {
-                    color: "rgb(197, 217, 255)"
+                    color: "rgb(197, 217, 255)",
+                    fontSize: isMobile ? "0.8rem" : "1rem"
                 },
                 children: "Contact"
             }, void 0, false, {
                 fileName: "src/Components/Header.jsx",
-                lineNumber: 27,
+                lineNumber: 29,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/Components/Header.jsx",
-        lineNumber: 11,
+        lineNumber: 13,
         columnNumber: 5
     }, undefined);
 };
