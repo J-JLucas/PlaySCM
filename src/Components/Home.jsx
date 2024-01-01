@@ -18,9 +18,11 @@ const Home = () => {
   return (
     <section id="home" className="min-height" style={{ backgroundColor: isMobileDevice ? 'black' : 'transparent' }}>
       {!isMobileDevice && <img className="background" src={image} alt="" />}
-      <div style={{ position: "absolute", bottom: "3rem", left: "50%" }}>
-        <img src={arrowSvg} style={{ height: "3rem", width: "3rem" }} alt={imageAltText} />
-      </div>
+      {!isMobileDevice && (
+        <div style={{ position: "absolute", bottom: "3rem", left: "50%" }}>
+          <img src={arrowSvg} style={{ height: "3rem", width: "3rem" }} alt={imageAltText} />
+        </div>
+      )}
       <div style={{ display: "flex", justifyContent: "center", alignItems: "center", height: "100vh" }}>
         <iframe 
           title="YouTube video player"
