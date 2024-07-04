@@ -14,7 +14,7 @@ const imageAltText = "SCM Titlescreen";
 const project = {
   title: "CLICK TO DOWNLOAD STARCRAFT: MARINE",
   description: "",
-  url: "https://github.com/J-JLucas/SCM/releases/tag/FirstRelease",
+  url: "https://github.com/J-JLucas/SCM/releases/tag/v1.81",
 };
 
 const Download = () => {
