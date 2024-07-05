@@ -28738,7 +28738,6 @@ try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
-//import React from "react";
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _scmtitleJpg = require("../images/SCMTitle.jpg");
@@ -28763,7 +28762,7 @@ const imageAltText = "SCM Titlescreen";
 const project = {
     title: "CLICK TO DOWNLOAD STARCRAFT: MARINE",
     description: "",
-    url: "https://github.com/J-JLucas/SCM/releases/tag/FirstRelease"
+    url: "https://github.com/J-JLucas/SCM/releases"
 };
 const Download = ()=>{
     _s();
@@ -28796,7 +28795,7 @@ const Download = ()=>{
                 children: "DOWNLOAD"
             }, void 0, false, {
                 fileName: "src/Components/Portfolio.jsx",
-                lineNumber: 42,
+                lineNumber: 41,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -28818,22 +28817,33 @@ const Download = ()=>{
                                 children: "Previous"
                             }, void 0, false, {
                                 fileName: "src/Components/Portfolio.jsx",
-                                lineNumber: 46,
+                                lineNumber: 45,
                                 columnNumber: 11
                             }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                                src: images[currentImageIndex],
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                onClick: openModal,
                                 style: {
-                                    height: "90%",
-                                    width: "100%",
-                                    objectFit: "cover",
+                                    padding: 0,
+                                    border: "none",
+                                    background: "none",
                                     cursor: "pointer"
                                 },
-                                alt: imageAltText,
-                                onClick: openModal
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                    src: images[currentImageIndex],
+                                    style: {
+                                        height: "90%",
+                                        width: "100%",
+                                        objectFit: "cover"
+                                    },
+                                    alt: imageAltText
+                                }, void 0, false, {
+                                    fileName: "src/Components/Portfolio.jsx",
+                                    lineNumber: 47,
+                                    columnNumber: 13
+                                }, undefined)
                             }, void 0, false, {
                                 fileName: "src/Components/Portfolio.jsx",
-                                lineNumber: 47,
+                                lineNumber: 46,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -28857,13 +28867,30 @@ const Download = ()=>{
                                     justifyContent: "center",
                                     alignItems: "center"
                                 },
-                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                                    src: images[currentImageIndex],
-                                    alt: "",
-                                    onClick: closeModal
+                                role: "button",
+                                tabIndex: 0,
+                                onKeyDown: (e)=>{
+                                    if (e.key === "Escape") closeModal();
+                                },
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                    onClick: closeModal,
+                                    style: {
+                                        padding: 0,
+                                        border: "none",
+                                        background: "none",
+                                        cursor: "pointer"
+                                    },
+                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                        src: images[currentImageIndex],
+                                        alt: ""
+                                    }, void 0, false, {
+                                        fileName: "src/Components/Portfolio.jsx",
+                                        lineNumber: 64,
+                                        columnNumber: 17
+                                    }, undefined)
                                 }, void 0, false, {
                                     fileName: "src/Components/Portfolio.jsx",
-                                    lineNumber: 57,
+                                    lineNumber: 63,
                                     columnNumber: 15
                                 }, undefined)
                             }, void 0, false, {
@@ -28874,7 +28901,7 @@ const Download = ()=>{
                         ]
                     }, void 0, true, {
                         fileName: "src/Components/Portfolio.jsx",
-                        lineNumber: 45,
+                        lineNumber: 44,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -28899,12 +28926,12 @@ const Download = ()=>{
                                         children: project.title
                                     }, void 0, false, {
                                         fileName: "src/Components/Portfolio.jsx",
-                                        lineNumber: 66,
+                                        lineNumber: 73,
                                         columnNumber: 15
                                     }, undefined)
                                 }, void 0, false, {
                                     fileName: "src/Components/Portfolio.jsx",
-                                    lineNumber: 65,
+                                    lineNumber: 72,
                                     columnNumber: 13
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -28912,30 +28939,30 @@ const Download = ()=>{
                                     children: project.description
                                 }, void 0, false, {
                                     fileName: "src/Components/Portfolio.jsx",
-                                    lineNumber: 68,
+                                    lineNumber: 75,
                                     columnNumber: 13
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/Components/Portfolio.jsx",
-                            lineNumber: 64,
+                            lineNumber: 71,
                             columnNumber: 11
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/Components/Portfolio.jsx",
-                        lineNumber: 63,
+                        lineNumber: 70,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/Components/Portfolio.jsx",
-                lineNumber: 44,
+                lineNumber: 43,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/Components/Portfolio.jsx",
-        lineNumber: 41,
+        lineNumber: 40,
         columnNumber: 5
     }, undefined);
 };
