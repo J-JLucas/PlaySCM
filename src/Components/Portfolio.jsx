@@ -1,4 +1,3 @@
-//import React from "react";
 import React, { useState } from "react";
 
 import image1 from "../images/SCMTitle.jpg";
@@ -14,7 +13,7 @@ const imageAltText = "SCM Titlescreen";
 const project = {
   title: "CLICK TO DOWNLOAD STARCRAFT: MARINE",
   description: "",
-  url: "https://github.com/J-JLucas/SCM/releases/tag/v1.81",
+  url: "https://github.com/J-JLucas/SCM/releases",
 };
 
 const Download = () => {
@@ -44,21 +43,29 @@ const Download = () => {
       <div style={{ display: "flex", justifyContent: "center", paddingTop: "3rem" }}>
         <div style={{ maxWidth: "40%", alignSelf: "center", margin: "auto" }}>
           <button onClick={prevImage}>Previous</button>
-          <img
-            src={images[currentImageIndex]}
-            style={{ height: "90%", width: "100%", objectFit: "cover", cursor: 'pointer' }}
-            alt={imageAltText}
-            onClick={openModal}
-          />
+          <button onClick={openModal} style={{ padding: 0, border: "none", background: "none", cursor: "pointer" }}>
+            <img
+              src={images[currentImageIndex]}
+              style={{ height: "90%", width: "100%", objectFit: "cover" }}
+              alt={imageAltText}
+            />
+          </button>
           <button onClick={nextImage}>Next</button>
 
           {isModalOpen && (
-            <div onClick={closeModal} style={{ position: 'fixed', top: 0, left: 0, right: 0, bottom: 0, backgroundColor: 'rgba(0, 0, 0, 0.5)', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-              <img src={images[currentImageIndex]} alt="" onClick={closeModal} />
+            <div
+              onClick={closeModal}
+              style={{ position: 'fixed', top: 0, left: 0, right: 0, bottom: 0, backgroundColor: 'rgba(0, 0, 0, 0.5)', display: 'flex', justifyContent: 'center', alignItems: 'center' }}
+              role="button"
+              tabIndex={0}
+              onKeyDown={(e) => { if (e.key === 'Escape') closeModal(); }}
+            >
+              <button onClick={closeModal} style={{ padding: 0, border: "none", background: "none", cursor: "pointer" }}>
+                <img src={images[currentImageIndex]} alt="" />
+              </button>
             </div>
           )}
         </div>
-
 
         <div className="container" style={{ display: 'inline-block' }}>
           <div className="box">
